@@ -1,18 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {
-	changeInsert,
-	insert,
-	toggle,
-	remove,
-	changInput,
-} from '../modules/todos';
+import { changeInput, insert, toggle, remove } from '../modules/todos';
 import Todos from '../components/Todos';
 
 const TodosContainer = ({
 	input,
 	todos,
-	changeInsert,
+	changeInput,
 	insert,
 	toggle,
 	remove,
@@ -21,7 +15,7 @@ const TodosContainer = ({
 		<Todos
 			input={input}
 			todos={todos}
-			onChangeInput={changInput}
+			onChangeInput={changeInput}
 			onInsert={insert}
 			onToggle={toggle}
 			onRemove={remove}
@@ -37,7 +31,7 @@ export default connect(
 		todos: todos.todos,
 	}),
 	{
-		changInput,
+		changeInput,
 		insert,
 		toggle,
 		remove,
