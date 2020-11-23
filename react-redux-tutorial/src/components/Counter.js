@@ -1,5 +1,6 @@
 import React from 'react';
 
+// 카운터 컴포넌트
 const Counter = ({ number, onIncrease, onDecrease }) => {
 	return (
 		<div>
