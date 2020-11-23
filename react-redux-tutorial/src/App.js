@@ -1,9 +1,10 @@
 import React from 'react';
+import Counter from './components/Counter';
 
 const App = () => {
 	return (
 		<div>
-			<h1>17장 리덕스를 사용하여 리액트 애플리케이션 상태 관리하기</h1>
+			<Counter number={0} />
 		</div>
 	);
 };
